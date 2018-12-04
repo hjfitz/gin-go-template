@@ -31,7 +31,7 @@ func serveStaticPages(r *gin.Engine, dir string) {
 	}
 }
 
-func authMiddleware() gin.HandlerFunc {
+func middleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		fmt.Println("some middleware invoked")
 	}
